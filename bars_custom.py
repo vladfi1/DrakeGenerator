@@ -15,7 +15,7 @@ from distutils import util
 ex = Experiment(save_git_info=False)
 ex.observers.append(MongoObserver(
     url=os.environ['DRAKEMONGOURL'],
-    db_name='myFirstDatabase'))
+    db_name='sacred'))
 
 # Hyperparameters
 seq_length = 40
